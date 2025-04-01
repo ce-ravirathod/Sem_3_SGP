@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurent Management System</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylew.css">
+    <style>
+        .p_name img{
+  width: 80px;
+  height: 80px;
+  margin-left: 500px;
+  margin-right: 25px;
+  /* margin-top: 40px; */
+  float: left;
+  }
+        @media screen and (max-width: 480px) {
+    .p_name h1{
+      font-size: 35px;
+    }
+    .p_name img{
+        margin-left: 50px;
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main_image">
+
+            <div class="p_name">
+                <img src="symbol.jpg"></img>
+                    <h1>NHP's Restroo</h1>
+        </div>
+            <div class="Log_in">
+                <!-- <form method="post" action="session2.php">
+                    User Name<input type="text" name="uname"></br>
+                    Password<input type="password" name="password"></br>
+                    <input type="submit" name="submit" value="submit">
+                </form> -->
+                <form action="waiterverify.php" method="post">
+                  <div class="fade">
+                     
+                    <div class="heading">
+                        <h3>Waiter</h3>
+                        <p>Login in with email and password</p>
+                    </div>
+            
+                    <!-- Main container for all inputs -->
+                    <div class="Container1">
+                        Your Email
+                        <input type="email" placeholder="Enter Email" name="fname" required>
+            
+                        <br><br>
+                        Your password
+                        <input type="password" placeholder="Enter Password" name="pwd" required>
+            
+                        <div class="Container2">
+                            <label>
+                              <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <p class="fpwd" name="fpwd"> <a href="forgot.php">Forgot Password?</a></p>
+                        </div>
+            
+                        <button type="submit">Login</button>
+            
+                        <!-- Sign up link -->
+                        <p class="reg">Not a member?  <a href="waiter_rag.html">Register For Waiter</a></br>
+                            <a href="chef_rag.html">Register For Chef</a>
+                        </p>
+            
+                    </div>
+                 </div> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
