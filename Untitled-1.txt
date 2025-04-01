@@ -1,0 +1,22 @@
+<?php
+if(isset($_POST[submit])){
+    $pass=$_POST[role];
+echo $pass."helllo";
+    $con=mysql_connect("localhost","root");
+    $db=mysql_select_db("restaurant");
+    $query="select * from admin";
+    $cmd=mysql_query($query,$con);
+    while($row=mysql_fetch_array($cmd)){
+        $fpwd=$row[forgot_pass];
+    ?>
+    
+    <?php 
+    if($pass==$fpwd){
+            header("location:newpass.php?un=");
+    }
+    else{	
+        echo "Please enter correct role model";     
+    }
+    ?>
+    
+<?php } }?>
